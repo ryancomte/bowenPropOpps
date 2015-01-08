@@ -1,0 +1,45 @@
+
+        <div class="top-container">
+            <div class="main-content">
+                <h1>Thinking about selling your house? </h1>
+                <h1>You have come to the right place!</h1>
+                <h4>We specialize in helping those that need to sell their houses fast.</h4>
+                <h6>Fill out this form to contact us about your property!</h6>
+                <div class="form-container">
+                    <form ng-hide="messageSent" novalidate>
+                        <div class="form-first">
+                            <input type="text" name="name" ng-model="owner.name" placeholder="Name">
+                            <input type="text" name="phone_number" ng-model="owner.phone" placeholder="Phone Number">
+                            <input type="email" name="email" ng-model="owner.email" placeholder="Email">
+                        </div>
+                        <input type="text" name="address" ng-model="owner.street1" placeholder="Address of Property">
+                        <div class="address">
+                            <input type="text" name="city" ng-model="owner.city" placeholder="City">
+                            <input type="text" name="zipcode" ng-model="owner.zipcode" placeholder="Zip Code">
+                        </div>
+                        <textarea ng-model="owner.reason" placeholder="Why are you selling?"></textarea>
+                        <button ng-click="sendInfo(owner)">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <div class="main-content home">
+        <div class="home-img">
+            <img src="../img/Ethan-resize500.png" alt="ethan image"/>
+        </div>
+        <span>
+             <strong>Trying to keep your house?</strong>
+            Working in this industry has allowed us to develop an expertise in understanding how banks work and what they really want.
+            Foreclosing is the last thing that your bank wants to do! Let's figure out how to save your home from foreclosure.
+            Give us a call or leave your information and we can set an appointment to sit down and evaluate your situation.
+        </span>
+        <span>
+            <strong>We are here to help you!</strong>
+           If you are underwater on your mortgage, or just can't list your house with an agent, we can help you.
+           We'd love to get to know you and why you are interested in selling your house.
+        </span>
+    </div>
+<footer>
+    <div><a href="#"> privacy policy, terms and security</a></div>
+    <div>Built by Ryan Comte</div>
+</footer>

@@ -1,0 +1,9 @@
+<nav>
+    <div class="inner-nav">
+        <img ui-sref="home" src="img/ethanLogo.svg" style="width:310px">
+        <i class="fa fa-bars" ng-click="showNav()"></i>
+        <ul>
+            <li  ui-sref-active="selected" ng-repeat="nav in ['home','FAQ','about']" ui-sref="{{nav}}" ng-click="closeNav()">{{nav}}</li>
+        </ul>
+    </div>
+</nav>
